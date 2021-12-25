@@ -1,4 +1,4 @@
 function revealMessage(){
     document.getElementById("Hiddenmsg").style.display = 'block';
 }
-window.alert('Kire Magi');
+window.alert('Chatro league wants to know your location ');
