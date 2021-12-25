@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surprise</title>
+    <style>
+        body{
+            animation: back_animation 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes back_animation {
+            0%   {background-color: black;}
+            25%  {background-color: rgb(19, 18, 18);}
+            75%  {background-color: rgb(48, 45, 45);}
+            100% {background-color: black;}
+        }
+        @keyframes text_animation {
+            0%   {color: crimson;}
+            25%  {color: deeppink;}
+            75%  {color: deepskyblue;}
+            100% {color: mediumvioletred;}
+        }
+        h1{
+            animation: text_animation 5s;
+            animation-iteration-count: infinite;
+        }
+        p{
+            font-size: 40px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="revealMessage()" style="font-size: 50px; cursor: pointer;">Click Me</button>
+    <br>
+    <Span id="Hiddenmsg" style="height: 500px; display: none;">
+        <h1 style="font-size: 100px;">Happy Birthday Mama</h1>
+        <p> Sorry mama ekhono advanced code sikhi nai tai animation add korte pari nai :'( </p>
+        <p>Time o chilo na naile aro fancy banaitam</p>
+    </Span>
+    <script src="script.js"></script>
+</body>
+</html>
